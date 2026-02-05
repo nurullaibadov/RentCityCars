@@ -31,24 +31,21 @@ namespace RC.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(17);
 
-            builder.Property(c => c.PricePerDay)
-                .HasPrecision(18, 2);
+            builder.Property(c => c.PricePerDay).HasPrecision(18, 2);
+            builder.Property(c => c.PricePerWeek).HasPrecision(18, 2);
+            builder.Property(c => c.PricePerMonth).HasPrecision(18, 2);
+            builder.Property(c => c.DepositAmount).HasPrecision(18, 2);
+            builder.Property(c => c.DiscountPercentage).HasPrecision(5, 2);
+            builder.Property(c => c.EngineSize).HasPrecision(5, 2);
 
-            builder.Property(c => c.PricePerWeek)
-                .HasPrecision(18, 2);
-
-            builder.Property(c => c.PricePerMonth)
-                .HasPrecision(18, 2);
-
-            builder.Property(c => c.DepositAmount)
-                .HasPrecision(18, 2);
-
+            // ImageUrls -> List<string> converter
             builder.Property(c => c.ImageUrls)
                 .HasConversion(
                     v => string.Join(',', v),
                     v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList()
                 );
 
+            // Relations
             builder.HasOne(c => c.Location)
                 .WithMany(l => l.Cars)
                 .HasForeignKey(c => c.LocationId)
@@ -64,6 +61,12 @@ namespace RC.Persistence.Configurations
                 .HasForeignKey(b => b.CarId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            builder.HasMany(c => c.Reviews)
+                .WithOne(r => r.Car)
+                .HasForeignKey(r => r.CarId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Indexes
             builder.HasIndex(c => c.LicensePlate).IsUnique();
             builder.HasIndex(c => c.VIN).IsUnique();
             builder.HasIndex(c => c.Status);

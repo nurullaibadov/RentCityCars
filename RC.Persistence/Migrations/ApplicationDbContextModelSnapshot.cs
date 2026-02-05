@@ -522,13 +522,15 @@ namespace RC.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("DiscountPercentage")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
 
                     b.Property<int>("Doors")
                         .HasColumnType("int");
 
                     b.Property<decimal>("EngineSize")
-                        .HasColumnType("decimal(18,2)");
+                        .HasPrecision(5, 2)
+                        .HasColumnType("decimal(5,2)");
 
                     b.Property<int>("FuelType")
                         .HasColumnType("int");
@@ -852,7 +854,8 @@ namespace RC.Persistence.Migrations
 
                     b.Property<string>("LicenseNumber")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<DateTime?>("MedicalCertificateDate")
                         .HasColumnType("datetime2");
@@ -861,9 +864,11 @@ namespace RC.Persistence.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("PricePerDay")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("PricePerHour")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Specialties")
@@ -892,6 +897,13 @@ namespace RC.Persistence.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IsVerified");
+
+                    b.HasIndex("LicenseNumber")
+                        .IsUnique();
+
+                    b.HasIndex("Status");
 
                     b.HasIndex("UserId")
                         .IsUnique();
