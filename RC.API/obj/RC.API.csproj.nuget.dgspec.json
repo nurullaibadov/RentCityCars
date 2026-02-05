@@ -36,6 +36,9 @@
               "C:\\Backend\\RC\\RC.Application\\RC.Application.csproj": {
                 "projectPath": "C:\\Backend\\RC\\RC.Application\\RC.Application.csproj"
               },
+              "C:\\Backend\\RC\\RC.Domain\\RC.Domain.csproj": {
+                "projectPath": "C:\\Backend\\RC\\RC.Domain\\RC.Domain.csproj"
+              },
               "C:\\Backend\\RC\\RC.Infrastructure\\RC.Infrastructure.csproj": {
                 "projectPath": "C:\\Backend\\RC\\RC.Infrastructure\\RC.Infrastructure.csproj"
               },
@@ -66,6 +69,12 @@
               "version": "[8.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.0, )"
             },
@@ -239,6 +248,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -317,6 +338,14 @@
             "MailKit": {
               "target": "Package",
               "version": "[4.14.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Twilio": {
               "target": "Package",
