@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Backend\\RC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|c:\\backend\\rc\\rc.persistence\\migrations\\20260205170142_addalltbssssssssssssssss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|solutionrelative:rc.persistence\\migrations\\20260205170142_addalltbssssssssssssssss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0002ABD2-AFC0-972A-6E79-8714DE22A903}|RC.API\\RC.API.csproj|c:\\backend\\rc\\rc.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0002ABD2-AFC0-972A-6E79-8714DE22A903}|RC.API\\RC.API.csproj|solutionrelative:rc.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|c:\\backend\\rc\\rc.persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|solutionrelative:rc.persistence\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|c:\\backend\\rc\\rc.persistence\\configurations\\bookingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|solutionrelative:rc.persistence\\configurations\\bookingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|c:\\backend\\rc\\rc.persistence\\configurations\\carconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36D50C85-3988-C0E9-3F6C-5C7789E778CD}|RC.Persistence\\RC.Persistence.csproj|solutionrelative:rc.persistence\\configurations\\carconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0002ABD2-AFC0-972A-6E79-8714DE22A903}|RC.API\\RC.API.csproj|c:\\backend\\rc\\rc.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0002ABD2-AFC0-972A-6E79-8714DE22A903}|RC.API\\RC.API.csproj|solutionrelative:rc.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6708833-3AD8-3BBC-CC93-B92045D7862F}|RC.Application\\RC.Application.csproj|c:\\backend\\rc\\rc.application\\rc.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A6708833-3AD8-3BBC-CC93-B92045D7862F}|RC.Application\\RC.Application.csproj|solutionrelative:rc.application\\rc.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +47,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20260205170142_addalltbssssssssssssssss.cs",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.Persistence\\Migrations\\20260205170142_addalltbssssssssssssssss.cs",
+              "RelativeDocumentMoniker": "RC.Persistence\\Migrations\\20260205170142_addalltbssssssssssssssss.cs",
+              "ToolTip": "C:\\Backend\\RC\\RC.Persistence\\Migrations\\20260205170142_addalltbssssssssssssssss.cs",
+              "RelativeToolTip": "RC.Persistence\\Migrations\\20260205170142_addalltbssssssssssssssss.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:01:43.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.API\\Program.cs",
+              "RelativeDocumentMoniker": "RC.API\\Program.cs",
+              "ToolTip": "C:\\Backend\\RC\\RC.API\\Program.cs",
+              "RelativeToolTip": "RC.API\\Program.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:01:13.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingConfiguration.cs",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.Persistence\\Configurations\\BookingConfiguration.cs",
+              "RelativeDocumentMoniker": "RC.Persistence\\Configurations\\BookingConfiguration.cs",
+              "ToolTip": "C:\\Backend\\RC\\RC.Persistence\\Configurations\\BookingConfiguration.cs",
+              "RelativeToolTip": "RC.Persistence\\Configurations\\BookingConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:00:11.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarConfiguration.cs",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.Persistence\\Configurations\\CarConfiguration.cs",
+              "RelativeDocumentMoniker": "RC.Persistence\\Configurations\\CarConfiguration.cs",
+              "ToolTip": "C:\\Backend\\RC\\RC.Persistence\\Configurations\\CarConfiguration.cs",
+              "RelativeToolTip": "RC.Persistence\\Configurations\\CarConfiguration.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwEgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T17:00:07.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.API\\appsettings.json",
+              "RelativeDocumentMoniker": "RC.API\\appsettings.json",
+              "ToolTip": "C:\\Backend\\RC\\RC.API\\appsettings.json",
+              "RelativeToolTip": "RC.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-05T16:56:52.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.Persistence\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "RC.Persistence\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Backend\\RC\\RC.Persistence\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "RC.Persistence\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAwAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-05T16:56:46.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RC.Application",
+              "DocumentMoniker": "C:\\Backend\\RC\\RC.Application\\RC.Application.csproj",
+              "RelativeDocumentMoniker": "RC.Application\\RC.Application.csproj",
+              "ToolTip": "C:\\Backend\\RC\\RC.Application\\RC.Application.csproj",
+              "RelativeToolTip": "RC.Application\\RC.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-05T16:54:42.569Z",
+              "EditorCaption": ""
             }
           ]
         }

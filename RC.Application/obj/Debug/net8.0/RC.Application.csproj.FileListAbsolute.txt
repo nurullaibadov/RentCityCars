@@ -1,0 +1,16 @@
+C:\Backend\RC\RC.Application\bin\Debug\net8.0\RC.Application.deps.json
+C:\Backend\RC\RC.Application\bin\Debug\net8.0\RC.Application.dll
+C:\Backend\RC\RC.Application\bin\Debug\net8.0\RC.Application.pdb
+C:\Backend\RC\RC.Application\bin\Debug\net8.0\RC.Domain.dll
+C:\Backend\RC\RC.Application\bin\Debug\net8.0\RC.Domain.pdb
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.csproj.AssemblyReference.cache
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.AssemblyInfoInputs.cache
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.AssemblyInfo.cs
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.csproj.CoreCompileInputs.cache
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.sourcelink.json
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Appli.8FBD5492.Up2Date
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.dll
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\refint\RC.Application.dll
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\RC.Application.pdb
+C:\Backend\RC\RC.Application\obj\Debug\net8.0\ref\RC.Application.dll
