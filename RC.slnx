@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="RC.API/RC.API.csproj" />
+  <Project Path="RC.Application/RC.Application.csproj" />
+  <Project Path="RC.Domain/RC.Domain.csproj" />
+  <Project Path="RC.Infrastructure/RC.Infrastructure.csproj" />
+  <Project Path="RC.Persistence/RC.Persistence.csproj" />
+</Solution>
