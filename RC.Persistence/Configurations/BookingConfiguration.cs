@@ -19,18 +19,12 @@ namespace RC.Persistence.Configurations
                 .IsRequired()
                 .HasMaxLength(20);
 
-            builder.Property(b => b.TotalAmount)
-                .HasPrecision(18, 2);
+            builder.Property(b => b.SubTotal).HasPrecision(18, 2);
+            builder.Property(b => b.TaxAmount).HasPrecision(18, 2);
+            builder.Property(b => b.DepositAmount).HasPrecision(18, 2);
+            builder.Property(b => b.TotalAmount).HasPrecision(18, 2);
 
-            builder.Property(b => b.SubTotal)
-                .HasPrecision(18, 2);
-
-            builder.Property(b => b.TaxAmount)
-                .HasPrecision(18, 2);
-
-            builder.Property(b => b.DepositAmount)
-                .HasPrecision(18, 2);
-
+            // Relations
             builder.HasOne(b => b.User)
                 .WithMany(u => u.Bookings)
                 .HasForeignKey(b => b.UserId)
@@ -61,6 +55,7 @@ namespace RC.Persistence.Configurations
                 .HasForeignKey<Payment>(p => p.BookingId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            // Indexes
             builder.HasIndex(b => b.BookingNumber).IsUnique();
             builder.HasIndex(b => b.Status);
             builder.HasIndex(b => b.StartDate);

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace RC.Infrastructure.Services
 {
@@ -116,27 +117,64 @@ namespace RC.Infrastructure.Services
             await SendEmailAsync(to, subject, body);
         }
 
-        public async Task SendPasswordResetEmailAsync(string to, string resetToken)
+        public async Task SendPasswordResetEmailAsync(string email, string token)
         {
-            var resetUrl = $"{_configuration["App:FrontendUrl"]}/reset-password?token={resetToken}&email={to}";
+            var backendUrl = _configuration["App:BackendUrl"]; // https://localhost:7203
+            var encodedToken = HttpUtility.UrlEncode(token);
+            var encodedEmail = HttpUtility.UrlEncode(email);
 
-            var subject = "Password Reset Request";
+            // wwwroot/reset-password.html sayfasına yönlendir
+            var resetLink = $"{backendUrl}/reset-password.html?email={encodedEmail}&token={encodedToken}";
+
+            var subject = "Reset Your Password - CityCars Azerbaijan";
             var body = $@"
-            <html>
-            <body>
-                <h2>Password Reset Request</h2>
-                <p>We received a request to reset your password.</p>
-                <p>Click the link below to reset your password:</p>
-                <p><a href='{resetUrl}'>Reset Password</a></p>
-                <p>This link will expire in 24 hours.</p>
-                <p>If you didn't request this, please ignore this email.</p>
-                <br/>
-                <p>Best regards,<br/>CityCars Azerbaijan Team</p>
-            </body>
-            </html>
-        ";
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {{ font-family: Arial, sans-serif; line-height: 1.6; color: #333; }}
+        .container {{ max-width: 600px; margin: 0 auto; padding: 20px; }}
+        .header {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                   color: white; padding: 30px; text-align: center; border-radius: 10px 10px 0 0; }}
+        .content {{ background: #f9f9f9; padding: 30px; border-radius: 0 0 10px 10px; }}
+        .button {{ display: inline-block; padding: 15px 30px; background: #dc3545; 
+                  color: white; text-decoration: none; border-radius: 5px; 
+                  font-weight: bold; margin: 20px 0; }}
+        .footer {{ text-align: center; margin-top: 20px; color: #666; font-size: 12px; }}
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='header'>
+            <h1>🔐 Password Reset Request</h1>
+        </div>
+        <div class='content'>
+            <h2>Hello!</h2>
+            <p>We received a request to reset your password for your CityCars Azerbaijan account.</p>
+            <p>Click the button below to reset your password:</p>
+            
+            <div style='text-align: center;'>
+                <a href='{resetLink}' class='button'>Reset Password</a>
+            </div>
+            
+            <p style='margin-top: 20px; color: #666; font-size: 14px;'>
+                If the button doesn't work, copy and paste this link into your browser:<br>
+                <a href='{resetLink}' style='color: #dc3545; word-break: break-all;'>{resetLink}</a>
+            </p>
+            
+            <p style='margin-top: 20px; color: #999; font-size: 12px;'>
+                This link will expire in 24 hours.<br>
+                If you didn't request a password reset, please ignore this email.
+            </p>
+        </div>
+        <div class='footer'>
+            <p>© 2026 CityCars Azerbaijan. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>";
 
-            await SendEmailAsync(to, subject, body);
+            await SendEmailAsync(email, subject, body);
         }
 
         public async Task SendEmailVerificationAsync(string to, string verificationToken)
